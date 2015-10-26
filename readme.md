@@ -1,32 +1,30 @@
-# Flickr
+# Dynamic social connectors
 
-[![Build Status](https://img.shields.io/travis/iPublikuj/flickr.svg?style=flat-square)](https://travis-ci.org/iPublikuj/flickr)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/iPublikuj/flickr.svg?style=flat-square)](https://scrutinizer-ci.com/g/iPublikuj/flickr/?branch=master)
-[![Latest Stable Version](https://img.shields.io/packagist/v/ipub/flickr.svg?style=flat-square)](https://packagist.org/packages/ipub/flickr)
-[![Composer Downloads](https://img.shields.io/packagist/dt/ipub/flickr.svg?style=flat-square)](https://packagist.org/packages/ipub/flickr)
+[![Build Status](https://img.shields.io/travis/iPublikuj/dynamic-social-connectors.svg?style=flat-square)](https://travis-ci.org/iPublikuj/dynamic-social-connectors)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/iPublikuj/dynamic-social-connectors.svg?style=flat-square)](https://scrutinizer-ci.com/g/iPublikuj/dynamic-social-connectors/?branch=master)
+[![Latest Stable Version](https://img.shields.io/packagist/v/ipub/dynamic-social-connectors.svg?style=flat-square)](https://packagist.org/packages/ipub/dynamic-social-connectors)
+[![Composer Downloads](https://img.shields.io/packagist/dt/ipub/dynamic-social-connectors.svg?style=flat-square)](https://packagist.org/packages/ipub/dynamic-social-connectors)
 
 Flickr API client with authorization for [Nette Framework](http://nette.org/)
 
 ## Installation
 
-The best way to install ipub/flickr is using  [Composer](http://getcomposer.org/):
+The best way to install ipub/dynamic-social-connectors is using  [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require ipub/flickr
+$ composer require ipub/dynamic-social-connectors
 ```
 
 After that you have to register extension in config.neon.
 
 ```neon
 extensions:
-	flickr: IPub\Flickr\DI\FlickrExtension
+	dynamicSocialConnectors: IPub\DynamicSocialConnectors\DI\DynamicSocialConnectorsExtension
 ```
-
-> NOTE: Don't forget to register [OAuth extension](http://github.com/iPublikuj/oauth), because this extension is depended on it!
 
 ## Documentation
 
-Learn how to authenticate the user using Flickr's oauth or call Flickr's api in [documentation](https://github.com/iPublikuj/flickr/blob/master/docs/en/index.md).
+Learn how to override default social connectors with custom factories in [documentation](https://github.com/iPublikuj/dynamic-social-connectors/blob/master/docs/en/index.md).
 
 ***
-Homepage [http://www.ipublikuj.eu](http://www.ipublikuj.eu) and repository [http://github.com/iPublikuj/flickr](http://github.com/iPublikuj/flickr).
+Homepage [http://www.ipublikuj.eu](http://www.ipublikuj.eu) and repository [http://github.com/iPublikuj/dynamic-social-connectors](http://github.com/iPublikuj/dynamic-social-connectors).
