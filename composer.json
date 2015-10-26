@@ -1,0 +1,50 @@
+{
+	"name"			: "ipub/dynamic-social-connectors",
+	"type"			: "library",
+	"description"	: "Override default social connectors with custom factories in Nette Framework",
+	"keywords"		: ["nette", "ipub", "ipublikuj", "social connecotrs", "facebook", "twitter", "flickr", "500px"],
+	"homepage"		: "https://github.com/iPublikuj/dynamic-social-connectors",
+	"license"		: ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+
+	"authors": [
+		{
+			"name"		: "iPublikuj:cms",
+			"email"		: "info@ipublikuj.eu",
+			"homepage"	: "http://www.ipublikuj.eu/"
+		}
+	],
+
+	"support": {
+		"email"		:"support@ipublikuj.eu",
+		"issues"	:"https://github.com/iPublikuj/flickr/issues"
+	},
+
+	"require": {
+		"php"				: ">=5.4",
+
+		"nette/application"	: "~2.2",
+		"nette/di"			: "~2.2",
+		"nette/utils"		: "~2.2"
+	},
+
+	"require-dev": {
+		"nette/bootstrap"		: "~2.2",
+		"nette/forms"			: "~2.2",
+		"nette/mail"			: "~2.2",
+		"nette/robot-loader"	: "~2.2",
+		"nette/safe-stream"		: "~2.2",
+		"nette/tester"			: "@dev",
+		"tracy/tracy"			: "@dev",
+		"janmarek/mockista"		: "@dev"
+	},
+
+	"autoload": {
+		"psr-0": {
+			"IPub\\DynamicSocialConnectors\\": "src/"
+		}
+	},
+
+	"autoload-dev": {
+		"classmap": ["tests/IPubTests/"]
+	}
+}
